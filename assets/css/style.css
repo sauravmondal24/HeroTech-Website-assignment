@@ -19,6 +19,12 @@
 }
 
 /* Header Section start */
+/* .slider-item {
+	height: 85vh !important;
+} */
+.slider-img {
+	height: 85vh;
+}
 .silder-title {
 	font-size: 65px !important;
 }

@@ -19,6 +19,7 @@
 		></script>
 		<!-- StyleSheet Link -->
 		<link rel="stylesheet" href="assets/css/style.css" />
+		<link rel="stylesheet" href="assets/css/responsive.css" />
 	</head>
 	<body>
 		<!------------------------------
@@ -29,6 +30,7 @@
 			<div class="container">
 				<nav class="navbar navbar-expand-lg py-4">
 					<div class="container-fluid">
+						<a class="navbar-brand fs-3 fw-bolder" href="#">HeroTech</a>
 						<button
 							class="navbar-toggler"
 							type="button"
@@ -40,8 +42,8 @@
 						>
 							<span class="navbar-toggler-icon"></span>
 						</button>
+
 						<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-							<a class="navbar-brand fs-3 fw-bolder" href="#">HeroTech</a>
 							<ul class="navbar-nav m-auto mb-2 mb-lg-0 menu-sec">
 								<li class="nav-item">
 									<a
@@ -79,8 +81,9 @@
 					</div>
 				</nav>
 			</div>
+
 			<!-- Slider Section -->
-			<section class="slider-sec">
+			<section class="slider-sec mb-5">
 				<div class="container">
 					<div
 						id="carouselExampleCaptions"
@@ -110,59 +113,65 @@
 							></button>
 						</div> -->
 						<div class="carousel-inner">
-							<div
-								style="height: 85vh"
-								class="carousel-item active d-flex align-items-center"
-							>
+							<div class="carousel-item active">
 								<img
 									src="assets/images/cover/cover-1.png"
-									class="d-block w-100 img-fluid"
+									class="d-block w-100 img-fluid slider-img"
 									alt="..."
 								/>
-								<div class="carousel-caption d-none d-md-block">
+								<div class="carousel-caption d-md-block">
 									<h2 class="silder-title">Get Started Digital Learning</h2>
-									<p class="w-50 m-auto fw-light pb-4 fs-6">
+									<p class="w-50 m-auto fw-light pb-4 fs-6" id="slider-para">
 										It is a long established fact that a reader will be
 										distracted by the readable content of a page when looking at
 										its layout.
 									</p>
-									<button class="btn btn-primary px-4 py-2 fs-5">
+									<button
+										class="btn btn-primary px-4 py-2 fs-5"
+										id="slider-btn"
+									>
 										Get Started
 									</button>
 								</div>
 							</div>
-							<div style="height: 85vh" class="carousel-item">
+							<div class="carousel-item slider-item">
 								<img
 									src="assets/images/cover/cover-2.jpg"
-									class="d-block w-100 img-fluid"
+									class="d-block w-100 img-fluid slider-img"
 									alt="..."
 								/>
-								<div class="carousel-caption d-none d-md-block">
+								<div class="carousel-caption d-md-block">
 									<h2 class="silder-title">Get Started Digital Learning</h2>
-									<p class="w-50 m-auto fw-light pb-4 fs-6">
+									<p class="w-50 m-auto fw-light pb-4 fs-6" id="slider-para">
 										It is a long established fact that a reader will be
 										distracted by the readable content of a page when looking at
 										its layout.
 									</p>
-									<button class="btn btn-primary px-4 py-2 fs-5">
+									<button
+										class="btn btn-primary px-4 py-2 fs-5"
+										id="slider-btn"
+									>
 										Get Started
 									</button>
 								</div>
 							</div>
-							<div style="height: 85vh" class="carousel-item">
+							<div class="carousel-item slider-item">
 								<img
 									src="assets/images/cover/cover-3.jpg"
-									class="d-block w-100 img-fluid"
+									class="d-block w-100 img-fluid slider-img"
 									alt="..."
 								/>
-								<div class="carousel-caption d-none d-md-block">
+								<div class="carousel-caption d-md-block">
 									<h2 class="silder-title">Get Started Digital Learning</h2>
-									<p class="w-50 m-auto fw-light pb-4 fs-6">
+									<p class="w-50 m-auto fw-light pb-4 fs-6" id="slider-para">
 										It is a long established fact that a reader will be
 										distracted by the readable content of a page when looking at
 										its layout.
 									</p>
-									<button class="btn btn-primary px-4 py-2 fs-5">
+									<button
+										class="btn btn-primary px-4 py-2 fs-5"
+										id="slider-btn"
+									>
 										Get Started
 									</button>
 								</div>
@@ -203,13 +212,163 @@
 
 		<!-- Body Section Start -->
 		<main>
-			<section class="">
+			<section class="my-5">
 				<div class="container">
-					<h1 class="">Discover Our Popular Courses</h1>
-					<p>
+					<h1 class="text-center">Discover Our Popular Courses</h1>
+					<p class="text-center w-50 m-auto text-black-50 pb-4">
 						It is a long established fact that a reader will be distracted by
 						the readable content of a page when looking at its layout.
 					</p>
+					<div class="course-list">
+						<div class="row">
+							<div class="col-lg-6 col-md-12">
+								<div class="card mb-3" style="max-width: 100%">
+									<div class="row g-0">
+										<div class="col-md-4">
+											<img
+												src="assets/images/course/course-1.png"
+												class="img-fluid rounded-start"
+												alt="..."
+											/>
+										</div>
+										<div class="col-md-8">
+											<div class="card-body">
+												<h5 class="card-title fw-bold">
+													Fundamental Of UI/UX Design
+												</h5>
+												<p class="card-text text-black-50">
+													Some quick example text to build on the card title and
+													make up the bulk of the card.
+												</p>
+												<p class="card-text text-primary">Price : 20$</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-12">
+								<div class="card mb-3" style="max-width: 100%">
+									<div class="row g-0">
+										<div class="col-md-4">
+											<img
+												src="assets/images/course/course-2.png"
+												class="img-fluid rounded-start"
+												alt="..."
+											/>
+										</div>
+										<div class="col-md-8">
+											<div class="card-body">
+												<h5 class="card-title fw-bold">
+													Javascript Basic to advanced
+												</h5>
+												<p class="card-text text-black-50">
+													Some quick example text to build on the card title and
+													make up the bulk of the card.
+												</p>
+												<p class="card-text text-primary">Price : 90$</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-12">
+								<div class="card mb-3" style="max-width: 100%">
+									<div class="row g-0">
+										<div class="col-md-4">
+											<img
+												src="assets/images/course/course-3.png"
+												class="img-fluid rounded-start"
+												alt="..."
+											/>
+										</div>
+										<div class="col-md-8">
+											<div class="card-body">
+												<h5 class="card-title fw-bold">
+													Fullstack Web Development
+												</h5>
+												<p class="card-text text-black-50">
+													Some quick example text to build on the card title and
+													make up the bulk of the card.
+												</p>
+												<p class="card-text text-primary">Price : 70$</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-12">
+								<div class="card mb-3" style="max-width: 100%">
+									<div class="row g-0">
+										<div class="col-md-4">
+											<img
+												src="assets/images/course/course-4.png"
+												class="img-fluid rounded-start"
+												alt="..."
+											/>
+										</div>
+										<div class="col-md-8">
+											<div class="card-body">
+												<h5 class="card-title fw-bold">Digital Marketing</h5>
+												<p class="card-text text-black-50">
+													Some quick example text to build on the card title and
+													make up the bulk of the card.
+												</p>
+												<p class="card-text text-primary">Price : 40$</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-12">
+								<div class="card mb-3" style="max-width: 100%">
+									<div class="row g-0">
+										<div class="col-md-4">
+											<img
+												src="assets/images/course/course-5.png"
+												class="img-fluid rounded-start"
+												alt="..."
+											/>
+										</div>
+										<div class="col-md-8">
+											<div class="card-body">
+												<h5 class="card-title fw-bold">
+													Photography Basic Rules
+												</h5>
+												<p class="card-text text-black-50">
+													Some quick example text to build on the card title and
+													make up the bulk of the card.
+												</p>
+												<p class="card-text text-primary">Price : 50$</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-12">
+								<div class="card mb-3" style="max-width: 100%">
+									<div class="row g-0">
+										<div class="col-md-4">
+											<img
+												src="assets/images/course/course-6.png"
+												class="img-fluid rounded-start"
+												alt="..."
+											/>
+										</div>
+										<div class="col-md-8">
+											<div class="card-body">
+												<h5 class="card-title fw-bold">Motion Graphics</h5>
+												<p class="card-text text-black-50">
+													Some quick example text to build on the card title and
+													make up the bulk of the card.
+												</p>
+												<p class="card-text text-primary">Price : 30$</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</section>
 		</main>
