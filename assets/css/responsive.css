@@ -14,6 +14,18 @@
 		padding: 5px 10px !important;
 		font-size: 16px !important;
 	}
+	.course-title {
+		width: 100% !important;
+	}
+	.course-text {
+		width: 100% !important;
+	}
+	#course-img {
+		width: 100%;
+	}
+	.hero-pic {
+		height: 100% !important;
+	}
 }
 
 /* Tab Devices Responsive */
@@ -27,5 +39,14 @@
 	}
 	#slider-para {
 		width: 100% !important;
+	}
+	.course-title {
+		width: 100% !important;
+	}
+	.course-text {
+		width: 80% !important;
+	}
+	.hero-pic {
+		height: 100% !important;
 	}
 }
