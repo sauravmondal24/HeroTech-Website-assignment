@@ -26,6 +26,12 @@
 	.hero-pic {
 		height: 100% !important;
 	}
+	.Register-title {
+		text-align: center !important;
+	}
+	#Register-btn {
+		justify-content: center !important;
+	}
 }
 
 /* Tab Devices Responsive */
@@ -48,5 +54,11 @@
 	}
 	.hero-pic {
 		height: 100% !important;
+	}
+	.Register-title {
+		text-align: center !important;
+	}
+	#Register-btn {
+		justify-content: center !important;
 	}
 }
