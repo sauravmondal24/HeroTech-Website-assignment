@@ -26,6 +26,7 @@
 			 Header Section Start 
 		------------------------------->
 		<!-- Menu bar Section -->
+
 		<header>
 			<div class="container">
 				<nav class="navbar navbar-expand-lg py-4">
@@ -47,32 +48,34 @@
 							<ul class="navbar-nav m-auto mb-2 mb-lg-0 menu-sec">
 								<li class="nav-item">
 									<a
-										class="nav-link active fs-5 p-3 text-dark"
+										class="nav-link active fs-6 p-3 text-dark-50"
 										aria-current="page"
 										href="#"
 										>Home</a
 									>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link fs-5 p-3 text-dark" href="#">Courses</a>
+									<a class="nav-link fs-6 p-3 text-dark-50" href="#">Courses</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link fs-5 p-3 text-dark">Success</a>
+									<a class="nav-link fs-6 p-3 text-dark-50">Success</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link fs-5 p-3 text-dark">Details</a>
+									<a class="nav-link fs-6 p-3 text-dark-50">Details</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link fs-5 p-3 text-dark">About</a>
+									<a class="nav-link fs-6 p-3 text-dark-50">About</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link fs-5 p-3 text-dark">Gallery</a>
+									<a class="nav-link fs-6 p-3 text-dark-50">Gallery</a>
 								</li>
 							</ul>
 							<div class="d-flex" role="search">
 								<button
 									class="btn btn-outline-primary fs-6 fw-semibold px-4"
 									type="submit"
+									data-bs-toggle="modal"
+									data-bs-target="#staticBackdrop"
 								>
 									Register
 								</button>
@@ -82,7 +85,7 @@
 				</nav>
 			</div>
 
-			<!-- Slider Section -->
+			<!-- Slider Section start -->
 			<section class="slider-sec mb-5">
 				<div class="container">
 					<div
@@ -90,28 +93,6 @@
 						class="carousel slide slider-height"
 						data-bs-ride="false"
 					>
-						<!-- <div class="carousel-indicators">
-							<button
-								type="button"
-								data-bs-target="#carouselExampleCaptions"
-								data-bs-slide-to="0"
-								class="active"
-								aria-current="true"
-								aria-label="Slide 1"
-							></button>
-							<button
-								type="button"
-								data-bs-target="#carouselExampleCaptions"
-								data-bs-slide-to="1"
-								aria-label="Slide 2"
-							></button>
-							<button
-								type="button"
-								data-bs-target="#carouselExampleCaptions"
-								data-bs-slide-to="2"
-								aria-label="Slide 3"
-							></button>
-						</div> -->
 						<div class="carousel-inner">
 							<div class="carousel-item active">
 								<img
@@ -204,14 +185,19 @@
 					</div>
 				</div>
 			</section>
+			<!-- Slider Section end -->
 		</header>
 
 		<!------------------------------
 			 Header Section end 
 		------------------------------->
 
-		<!-- Body Section Start -->
+		<!--==============================
+			 Body Section Start
+		=================================-->
 		<main>
+			<!-- popular Courses section start -->
+
 			<section class="py-5">
 				<div class="container text-center">
 					<h1 class="fs-1 w-50 m-auto fw-bold course-title">
@@ -380,7 +366,11 @@
 					<button class="btn btn-primary text-center">See More Courses</button>
 				</div>
 			</section>
+
+			<!-- popular Courses section end -->
+
 			<!-- Hero Section Start -->
+
 			<section class="py-5">
 				<div class="container">
 					<div class="card mb-3 border-0" style="max-width: 100%">
@@ -398,7 +388,7 @@
 							>
 								<div class="card-body">
 									<h2 class="card-title fs-2 fw-bold">
-										Explore The elearning Institute
+										Explore The learning Institute
 									</h2>
 									<p class="card-text text-black-50">
 										There are many variations of passages of Lorem Ipsum
@@ -428,8 +418,11 @@
 					</div>
 				</div>
 			</section>
+
 			<!-- Hero Section End -->
+
 			<!-- Register section start -->
+
 			<section class="py-5">
 				<div class="container">
 					<div class="row">
@@ -448,22 +441,136 @@
 										class="card-body d-flex justify-content-end"
 										id="Register-btn"
 									>
-										<div class="btn btn-light px-4 py-2 text-primary">
+										<button
+											class="btn btn-light px-4 py-2 text-primary"
+											data-bs-toggle="modal"
+											data-bs-target="#staticBackdrop"
+										>
 											Register Now
-										</div>
+										</button>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
+
+					<!-- Modal Section Start -->
+
+					<div
+						class="modal fade"
+						id="staticBackdrop"
+						data-bs-backdrop="static"
+						data-bs-keyboard="false"
+						tabindex="-1"
+						aria-labelledby="staticBackdropLabel"
+						aria-hidden="true"
+					>
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header m-auto pt-4">
+									<div>
+										<h2
+											class="modal-title text-center text-primary"
+											id="staticBackdropLabel"
+										>
+											Register
+										</h2>
+										<span class="text-center text-black-50"
+											>Create your account .It's free and takes a minute.</span
+										>
+									</div>
+								</div>
+
+								<div class="modal-body">
+									<form>
+										<div class="mb-3">
+											<input
+												type="text"
+												class="form-control"
+												id="exampleInputEmail1"
+												aria-describedby="textHelp"
+												placeholder="Fast Name"
+											/>
+										</div>
+										<div class="mb-3">
+											<input
+												type="text"
+												class="form-control"
+												id="exampleInputText"
+												aria-describedby="textHelp"
+												placeholder="Last Name"
+											/>
+										</div>
+										<div class="mb-3">
+											<input
+												type="email"
+												class="form-control"
+												id="exampleInputEmail1"
+												aria-describedby="emailHelp"
+												placeholder="Email"
+											/>
+										</div>
+										<div class="mb-3">
+											<input
+												type="password"
+												class="form-control"
+												id="exampleInputPassword1"
+												placeholder="Password"
+											/>
+										</div>
+										<div class="mb-3">
+											<input
+												type="password"
+												class="form-control"
+												id="exampleInputPassword1"
+												placeholder="Confirm Password"
+											/>
+										</div>
+										<div class="mb-3 form-check">
+											<input
+												type="checkbox"
+												class="form-check-input"
+												id="exampleCheck1"
+											/>
+											<label class="form-check-label" for="exampleCheck1"
+												>I accept The
+												<a class="text-decoration-none fs-6 fw-light" href="#"
+													>Terms of Use & Privacy Policy</a
+												></label
+											>
+										</div>
+										<button type="submit" class="btn btn-primary w-100">
+											Submit
+										</button>
+									</form>
+								</div>
+								<div class="modal-footer">
+									<button
+										type="button"
+										class="btn btn-danger"
+										data-bs-dismiss="modal"
+									>
+										Close
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Modal Section End -->
 				</div>
 			</section>
+
 			<!-- Register section end -->
-			<!-- Successfull Student Section Start -->
+
+			<!---------------------------------------
+				 Successful Student Section Start 
+			---------------------------------------->
+
 			<section class="py-5">
 				<div class="container">
 					<div class="student-title">
-						<h2 class="fs-1 fw-bold">Meet Our Successfull Students</h2>
+						<h2 class="fs-1 fw-bold">Meet Our Successful Students</h2>
 						<p class="fs-6 text-black-50 w-50 course-text">
 							It is a long established fact that a reader will be distracted by
 							the readable content of a page when looking at its layout.
@@ -527,7 +634,10 @@
 					</div>
 				</div>
 			</section>
-			<!-- Successfull Student Section end -->
+
+			<!-- -------------------------------------
+				Successful Student Section end 
+			------------------------------------------->
 
 			<!-- FeedBack Section start -->
 			<!-- <section class="py-5">
@@ -588,7 +698,9 @@
 			</section> -->
 			<!-- FeedBack Section end -->
 
-			<!-- FAQ Section Start -->
+			<!---------------------------------
+				 FAQ Section Start 
+			----------------------------------->
 			<section class="py-5">
 				<div class="container">
 					<div class="faq-section w-75 m-auto">
@@ -711,9 +823,13 @@
 					</div>
 				</div>
 			</section>
-			<!-- FAQ Section End -->
+
+			<!-------------------------------
+				 FAQ Section End 
+			-------------------------------->
 
 			<!-- Company Logo Section Start -->
+
 			<section class="py-5 companies-section">
 				<div class="container">
 					<h2 class="fs-1 fw-bold text-center py-4">
@@ -753,9 +869,13 @@
 					</div>
 				</div>
 			</section>
+
 			<!-- Company Logo Section End -->
 		</main>
-		<!-- Body Section End -->
+
+		<!--==============================
+			 Body Section End 
+		=================================-->
 
 		<!----------------------------
 			Footer Section Start

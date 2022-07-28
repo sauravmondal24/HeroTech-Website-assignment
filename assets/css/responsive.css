@@ -1,4 +1,6 @@
-/* Mobile devices Responsive */
+/*===============================
+    Mobile devices Responsive 
+ =================================*/
 
 @media only screen and (max-width: 688px) {
 	.slider-img {
@@ -40,7 +42,9 @@
 	}
 }
 
-/* Tab Devices Responsive */
+/*================================
+      Tab Devices Responsive 
+==================================*/
 
 @media only screen and (min-width: 689px) and (max-width: 992px) {
 	.slider-img {
