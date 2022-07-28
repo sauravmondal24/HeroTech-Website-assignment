@@ -13,7 +13,18 @@
 /* Header Section start */
 .slider-img {
 	height: 85vh;
-	/* background-color: black; */
+}
+
+.overlay::before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	right: 0px;
+	background: black;
+	opacity: 0.5;
 }
 
 .silder-title {
