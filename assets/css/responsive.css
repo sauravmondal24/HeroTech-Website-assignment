@@ -32,6 +32,9 @@
 	#Register-btn {
 		justify-content: center !important;
 	}
+	.faq-section {
+		width: 100% !important;
+	}
 }
 
 /* Tab Devices Responsive */
@@ -60,5 +63,8 @@
 	}
 	#Register-btn {
 		justify-content: center !important;
+	}
+	.faq-section {
+		width: 100% !important;
 	}
 }
