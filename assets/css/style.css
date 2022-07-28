@@ -10,23 +10,14 @@
 	font-family: 'Poppins', sans-serif;
 }
 
-:root {
-	--primary-color: gray;
-	--black-color: #161616;
-	--blue-color: #370df3;
-	--white-color: #fff;
-	--Pink-color: #dd0000;
-}
-
 /* Header Section start */
-/* .slider-item {
-	height: 85vh !important;
-} */
 .slider-img {
 	height: 85vh;
+	/* background-color: black; */
 }
+
 .silder-title {
-	font-size: 65px !important;
+	font-size: 55px !important;
 }
 
 /* Header Section end */
