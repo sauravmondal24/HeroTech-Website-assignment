@@ -35,6 +35,9 @@
 	.faq-section {
 		width: 100% !important;
 	}
+	.companies-section {
+		display: none !important;
+	}
 }
 
 /* Tab Devices Responsive */
@@ -66,5 +69,8 @@
 	}
 	.faq-section {
 		width: 100% !important;
+	}
+	.companies-section {
+		display: none !important;
 	}
 }
